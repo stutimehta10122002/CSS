@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* h1 has specificity 1*/
+        h1{ 
+            color: red;
+        }
+        
+        .yellow{
+            color: brown;
+        }
+        .cred{
+            color: aqua;
+        
+        }
+        .dred{
+            color: blue ;
+        }
+        [data-x=a]{
+            color: salmon;
+        }
+/* all has specificity 10 that is equal */
+/* more specificity more value*/
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred dred" data-x="a"> CSS Specificity</h1>
+    </div>
+</body>
+</html> 

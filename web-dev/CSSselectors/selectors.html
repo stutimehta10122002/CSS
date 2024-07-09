@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector*/
+        /*div { 
+            background-color: red
+        }*/
+        /*class selector*/
+            .red {
+                background-color: rgb(167, 223, 167) ;
+            }
+        /* id selector*/
+        #green{ 
+            background-color: green ;
+        }
+        /*child selector*/
+        div > p{
+            color: darkgreen;
+            background-color: lightgreen;
+        }
+        /*descendand selector*/
+        div p {
+            color: darkgreen;
+            background-color: lightgreen;
+        }
+        /*universal selector*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: pink;
+        }
+        a:link{
+            color: grey;
+
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: rgb(226, 82, 159);
+        }
+        p:first-child{
+            background-color: hotpink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i am one</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+        <p> i am a paragraph inside div</p>
+    </article>
+    </div>
+    <div id="green">
+       i am another div
+    </div>
+    <a href="https://www.google.com"> go to Google</a>
+    <a href="https://www.youtube.com"> go to Youtube</a>
+    <a href="https://codewithharry.com">go to code with harry</a>
+</body>
+</html>
